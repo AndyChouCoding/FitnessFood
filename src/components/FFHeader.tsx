@@ -3,43 +3,55 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import Home from "pages/home";
 
-const FFHeader: React.FunctionComponent =()=> {
+const FFHeader: React.FunctionComponent = () => {
     const go = useNavigate();
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [isNavOpen , setIsNavOpen] =useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
     return (
         <header className="sticky top-0 bg-white border-b-[1px] border-gray-300 ">
-            <div className="flex justify-between box-border h-[60px] lg:max-w-[1200px] lg:mx-auto min-w-[600px]" >
-                <img src="/images/logo.jpg" alt="" 
-                    onClick={()=>{
-                    go("/");
-                }}
+            <div className="flex justify-between box-border h-[60px] lg:max-w-[1200px] lg:mx-auto min-w-[600px]">
+                <img
+                    src="/images/logo.jpg"
+                    alt=""
+                    onClick={() => {
+                        go("/");
+                    }}
                 />
                 {/* logo */}
 
-                <nav className="items-center hidden lg:block lg:flex " >
-                    <div className="mx-[30px] text-[#18C5BF] text-[22px] font-bold "><a href="./body">Body</a></div>
-                    <div className="mx-[30px] text-[#18C5BF] text-[22px] font-bold "><a href="./shop">Shop</a></div>
-                    <div className="mx-[30px] text-[#18C5BF] text-[22px] font-bold "><a href="./about">About</a></div>
+                <nav className="items-center hidden lg:block lg:flex ">
+                    <div className="mx-[30px] text-[#18C5BF] text-[22px] font-bold ">
+                        <a href="./body">Body</a>
+                    </div>
+                    <div className="mx-[30px] text-[#18C5BF] text-[22px] font-bold ">
+                        <a href="./shop">Shop</a>
+                    </div>
+                    <div className="mx-[30px] text-[#18C5BF] text-[22px] font-bold ">
+                        <a href="./about">About</a>
+                    </div>
                 </nav>
                 {/* navContiner */}
 
                 <nav className="flex items-center">
-                    <img src="/images/cart.png" alt="" className="mr-[10px]"
-                    onClick={()=>{
-
-                    go("/cart");
-                    }}
+                    <img
+                        src="/images/cart.png"
+                        alt=""
+                        className="mr-[10px]"
+                        onClick={() => {
+                            go("/cart");
+                        }}
                     />
                     {/* cart */}
                     <nav className="flex items-center hidden lg:block lg:flex">
-                        <div className="mx-[5px] text-[#18C5BF] text-[16px]"><a href="./login">Login</a></div>
-                        <div className="mx-[5px] text-[#fff] text-[16px] bg-[#18C5BF] px-6 py-1 rounded-full"><a href="./signUp">Sign Up</a></div>
+                        <div className="mx-[5px] text-[#18C5BF] text-[16px]">
+                            <a href="./login">Login</a>
+                        </div>
+                        <div className="mx-[5px] text-[#fff] text-[16px] bg-[#18C5BF] px-6 py-1 rounded-full">
+                            <a href="./signUp">Sign Up</a>
+                        </div>
                     </nav>
-                    <label className="flex flex-col mx-[20px] lg:hidden" 
-                           onClick={() => setIsNavOpen((prev) => !prev)}
-                    >
+                    <label className="flex flex-col mx-[20px] lg:hidden" onClick={() => setIsNavOpen((prev) => !prev)}>
                         <span className="w-[30px] h-[5px] bg-[#18C5BF] "></span>
                         <span className="w-[30px] h-[5px] bg-[#18C5BF] my-2"></span>
                         <span className="w-[30px] h-[5px] bg-[#18C5BF]"></span>
@@ -47,10 +59,7 @@ const FFHeader: React.FunctionComponent =()=> {
                     {/* hamburger */}
 
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                        <div
-                            className=" absolute top-0 right-0 px-8 py-8"
-                            onClick={() => setIsNavOpen(false)}
-                        >
+                        <div className=" absolute top-0 right-0 px-8 py-8" onClick={() => setIsNavOpen(false)}>
                             <svg
                                 className="h-8 w-8 text-[#fff]"
                                 viewBox="0 0 24 24"
@@ -82,7 +91,8 @@ const FFHeader: React.FunctionComponent =()=> {
                             </li>
                         </ul>
                     </div>
-                    <style>{`
+                    <style>
+                        {`
                             .hideMenuNav {
                                 display: none;
                               }
@@ -104,11 +114,11 @@ const FFHeader: React.FunctionComponent =()=> {
                               }
                             `}
                     </style>
-                        {/* menuBtn */}
+                    {/* menuBtn */}
                 </nav>
                 {/* cart&info&hamburger */}
             </div>
         </header>
-    )
-}
+    );
+};
 export default FFHeader;
