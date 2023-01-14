@@ -1,12 +1,12 @@
-const HomeCartSendBtn: React.FunctionComponent = () => {
+const FFFCartSendBtn: React.FunctionComponent = () => {
     return (
         <>
             <button>
                 <a className="p-2 rounded-full text-[#fff] bg-[#18C5BF]" href="./cart">
-                    Add to Cart
+                    Add
                 </a>
             </button>
         </>
     );
 };
-export default HomeCartSendBtn;
+export default FFFCartSendBtn;

@@ -1,7 +1,6 @@
 import React from "react";
-
 import FFCountBtn from "components/FFCountBtn";
-import HomeCartSendBtn from "./HomeCartSendBtn";
+import FFFCartSendBtn from "../../../components/FFFCartSendBtn";
 
 interface IImage {
     id: number;
@@ -79,7 +78,7 @@ const HomeCart: React.FunctionComponent = () => {
                         })}
                     </div>
                 </div>
-                <div className="relative min-w-[100px] md:ml-[3%] md:w-[300px] ">
+                <div className="min-w-[100px] md:ml-[3%] md:w-[300px] ">
                     <h3 className="flex justify-center md:justify-start text-[36px] md:w-[250px] md:text-[32px]  md:mt-[50px] md:mb-[10px] lg:text-[36px] ">
                         {targetImage.title}
                     </h3>
@@ -96,11 +95,9 @@ const HomeCart: React.FunctionComponent = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="flex justify-center mb-[30px] md:absolute md:bottom-10 md:right-36 ">
+                    <div className="flex justify-center mb-[30px] ">
                         <FFCountBtn />
-                    </div>
-                    <div className="absolute right-[160px] bottom-[22px] md:right-[80px] md:bottom-[90px]">
-                        <HomeCartSendBtn />
+                        <FFFCartSendBtn />
                     </div>
                 </div>
             </div>

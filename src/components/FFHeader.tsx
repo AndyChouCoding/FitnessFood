@@ -9,8 +9,8 @@ const FFHeader: React.FunctionComponent = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 bg-white border-b-[1px] border-gray-300 ">
-            <div className="flex justify-between box-border h-[60px] lg:max-w-[1200px] lg:mx-auto min-w-[600px]">
+        <header className="sticky top-0 bg-white border-b-[1px] border-gray-300 min-w-[600px] lg:mx-auto lg:max-w-[1200px]">
+            <div className="flex justify-between box-border h-[60px] ">
                 <img
                     src="/images/logo.jpg"
                     alt=""
@@ -106,11 +106,12 @@ const FFHeader: React.FunctionComponent = () => {
                                 background:#18C5BF;
                                 color:#fff;
                                 font-size:40px;
-                                z-index: 10;
+                                z-index:999;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-evenly;
                                 align-items: center;
+                                min-width:600px;
                               }
                             `}
                     </style>
