@@ -16,7 +16,7 @@ const FFCountBtn: React.FunctionComponent = () => {
 
     return (
         <>
-            <div className="flex justify-center p-[20px] items-center w-[150px]">
+            <div className="flex justify-center  items-center ">
                 {/* <button className="flex p-[20px]" onClick={()=>setCount(0)} >Reset</button> */}
                 <button
                     className="flex p-[12px] w-[20px] h-[20px] items-center justify-center  bg-[#18C5BF] text-[#fff] text-[30px]"

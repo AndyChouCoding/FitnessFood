@@ -12,7 +12,7 @@ const FFHeader: React.FunctionComponent = () => {
         <header className="sticky top-0 bg-white border-b-[1px] border-gray-300 min-w-[600px] lg:mx-auto lg:max-w-[1200px]">
             <div className="flex justify-between box-border h-[60px] ">
                 <img
-                    src="/images/logo.jpg"
+                    src="../images/header/logo.jpg"
                     alt=""
                     onClick={() => {
                         go("/");
@@ -35,7 +35,7 @@ const FFHeader: React.FunctionComponent = () => {
 
                 <nav className="flex items-center">
                     <img
-                        src="/images/cart.png"
+                        src="../images/header/cart.png"
                         alt=""
                         className="mr-[10px]"
                         onClick={() => {

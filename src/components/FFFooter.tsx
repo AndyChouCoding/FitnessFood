@@ -1,13 +1,13 @@
 const FFFooter: React.FunctionComponent = () => {
     return (
         <>
-            <div className="   flex items-center justify-center h-[100px] bg-[#D3E9E8]  min-w-[600px]">
+            <div className="   flex items-center justify-center h-[100px] bg-[#D3E9E8]  min-w-[600px] ">
                 <div className=" ml-[20vh] ">
                     <p className=" text-[#18C5BF] font-bold text-lg"> &copy; FITNESS FOOD</p>
                 </div>
                 <div className="mx-[10%] flex items-center">
                     <img
-                        src="/images/footerIconIns.png"
+                        src="../images/footer/footerIconFcb.png"
                         alt=""
                         className="flex items-center w-[25px] h-25[px]"
                         onClick={() => {
@@ -15,7 +15,7 @@ const FFFooter: React.FunctionComponent = () => {
                         }}
                     />
                     <img
-                        src="/images/footerIconTwt.png"
+                        src="../images/footer/footerIconTwt.png"
                         alt=""
                         className="flex items-center w-[25px] h-25[px] mx-[10px]"
                         onClick={() => {
@@ -23,7 +23,7 @@ const FFFooter: React.FunctionComponent = () => {
                         }}
                     />
                     <img
-                        src="/images/footerIconFcb.png"
+                        src="../images/footer/footerIconFcb.png"
                         alt=""
                         className="flex items-center w-[25px] h-25[px]"
                         onClick={() => {

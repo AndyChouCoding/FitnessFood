@@ -6,7 +6,7 @@ const LoginInput: React.FunctionComponent = () => {
             <div className="flex justify-center min-w-[600px]">
                 <div
                     className="flex justify-center  bg-cover bg-center w-[100%] h-[85vh]"
-                    style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/login.jpeg"})` }}
+                    style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/login/login.jpeg"})` }}
                 >
                     <div className=" grid place-content-center w-full bg-[#fff] bg-opacity-60 px-[30px]">
                         <div className="flex-col">

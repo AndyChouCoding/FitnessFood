@@ -4,7 +4,7 @@ const SighUpContant: React.FunctionComponent = () => {
             <div className="flex justify-center min-w-[600px]">
                 <div
                     className="bg-cover bg-center w-[100%] h-[85vh]"
-                    style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/signUp.jpeg"})` }}
+                    style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/signup/signUp.jpeg"})` }}
                 >
                     <div className=" grid place-content-center h-full bg-[#fff] bg-opacity-60 px-[30px]">
                         <div>
