@@ -71,7 +71,7 @@ const ShopContent: React.FunctionComponent = () => {
                                         onClick={() => onShopCarousels(d)}
                                     >
                                         <img className={`${d.classes}`} src={d.src} alt={d.src} />
-                                        <div className="flex justify-end">
+                                        <div className="flex justify-end mt-[10px]">
                                             <FFCountBtn />
                                             <FFFCartSendBtn />
                                         </div>

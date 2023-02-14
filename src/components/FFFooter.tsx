@@ -15,7 +15,7 @@ const FFFooter: React.FunctionComponent = () => {
                         }}
                     />
                     <img
-                        src="../images/footer/footerIconTwt.png"
+                        src="../images/footer/footerIconIns.png"
                         alt=""
                         className="flex items-center w-[25px] h-25[px] mx-[10px]"
                         onClick={() => {
@@ -23,7 +23,7 @@ const FFFooter: React.FunctionComponent = () => {
                         }}
                     />
                     <img
-                        src="../images/footer/footerIconFcb.png"
+                        src="../images/footer/footerIconTwt.png"
                         alt=""
                         className="flex items-center w-[25px] h-25[px]"
                         onClick={() => {

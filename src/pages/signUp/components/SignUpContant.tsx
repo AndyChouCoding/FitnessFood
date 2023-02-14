@@ -15,11 +15,11 @@ const SighUpContant: React.FunctionComponent = () => {
                                 className="border h-[40px] w-[300px] text-[#000]  "
                                 placeholder="example@gmail.com"
                             ></input>
-                            <p className="text-[20px] font-bold">name</p>
+                            <p className="text-[20px] font-bold">Password</p>
                             <input className="border h-[40px] w-[300px] text-[#000]  "></input>
-                            <p className="text-[20px] font-bold">name</p>
+                            <p className="text-[20px] font-bold">Height</p>
                             <input className="border h-[40px] w-[300px] text-[#000]  "></input>
-                            <p className="text-[20px] font-bold">name</p>
+                            <p className="text-[20px] font-bold">weight</p>
                             <input className="border h-[40px] w-[300px] text-[#000]  "></input>
                         </div>
                         <div className="flex justify-end mt-[20px]">
